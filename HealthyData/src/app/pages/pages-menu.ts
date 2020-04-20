@@ -55,21 +55,13 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'lock-outline',
     children: [
       {
-        title: 'Login',
-        link: '/auth/login',
+        title: 'Busca Texto',
+        link: '/pages/forms/busca',
       },
       {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
-      },
+        title: 'Busca Avanzado',
+        link: '/pages/forms/busca',
+      }
     ],
   },
   {
@@ -77,21 +69,13 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'lock-outline',
     children: [
       {
-        title: 'Login',
-        link: '/auth/login',
+        title: 'Sube link',
+        link: '/pages/forms/sube',
       },
       {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
-      },
+        title: 'Sube Dataset',
+        link: '/pages/forms/sube',
+      }
     ],
   },
   {
@@ -100,38 +84,64 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Hierarchical Clustering',
-        link: '/auth/login',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'Tree EASE',
-        link: '/auth/register',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'HCL Support Trees',
-        link: '/auth/request-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'Self Organizing Tree Algoritm',
-        link: '/auth/reset-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'KMC Support',
-        link: '/auth/reset-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'QT Cluster',
-        link: '/auth/reset-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'QT Validation',
-        link: '/auth/reset-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'Self Organizing Map',
-        link: '/auth/reset-password',
+        link: '/pages/forms/analiza',
       },
       {
         title: 'Cluster Validation',
+        link: '/pages/forms/analiza',
+      },
+    ],
+  },
+  {
+    title: 'PERFIL',
+    group: true,
+  },
+  {
+    title: 'Auth',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'Login',
+        link: '/auth/login',
+      },
+      {
+        title: 'Register',
+        link: '/auth/register',
+      },
+      {
+        title: 'Request Password',
+        link: '/auth/request-password',
+      },
+      {
+        title: 'Reset Password',
         link: '/auth/reset-password',
       },
     ],
