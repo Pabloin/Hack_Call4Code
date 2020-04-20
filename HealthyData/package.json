@@ -1,13 +1,13 @@
 {
-  "name": "ngx-admin",
+  "name": "healthy-data",
   "version": "4.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
+    "url": "git+git@github.com:Pabloin/Hack_Call4Code.git"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "git@github.com:Pabloin/Hack_Call4Code/issues"
   },
   "scripts": {
     "ng": "ng",
