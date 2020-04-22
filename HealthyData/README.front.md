@@ -1,3 +1,4 @@
+# Comandos Creados en Angular
 
         ng g c pages/forms/buttons
 
@@ -31,19 +32,63 @@
         CREATE src/app/pages/forms/analiza/analiza.component.spec.ts (635 bytes)
         CREATE src/app/pages/forms/analiza/analiza.component.ts (270
 
-IMAGES FREE
+# Docker Image Build
+
+    ╰─$  docker build -t pabloeze/healthydata:1.0 .
+            Sending build context to Docker daemon  82.24MB
+            Step 1/13 : FROM node:10.16.0 as build
+            10.16.0: Pulling from library/node
+            a4d8138d0f6b: Pull complete
+            dbdc36973392: Pull complete
+            f59d6d019dd5: Pull complete
+            aaef3e026258: Pull complete
+            6e454d3b6c28: Pull complete
+            
+            ... 
+
+            (1/2) Installing lua5.3-libs (5.3.5-r2)
+            (2/2) Installing vim (8.1.1365-r0)
+            Executing busybox-1.29.3-r10.trigger
+            OK: 56 MiB in 44 packages
+            Removing intermediate container 4c9670b76d20
+            ---> b9f612126ab0
+            Step 11/13 : COPY --from=build /app/dist /usr/share/nginx/html
+            ---> dfe62c4afbc0
+            Step 12/13 : EXPOSE 80
+            ---> Running in 50bf5d7e25c6
+            Removing intermediate container 50bf5d7e25c6
+            ---> 48b5f4ce3449
+            Step 13/13 : CMD ["nginx", "-g", "daemon off;"]
+            ---> Running in 08227d0c83b2
+            Removing intermediate container 08227d0c83b2
+            ---> d5769f8a3fde
+            Successfully built d5769f8a3fde
+            Successfully tagged pabloin/healthydata:1.0
+
+        https://hub.docker.com/u/pabloeze/          
+
+        ╰─$ cat /tmp/pabloeze_pwd | docker login --username pabloeze --password-stdin
+
+        ╰─$ docker push pabloeze/healthydata:1.0
+            The push refers to repository [docker.io/pabloeze/healthydata]
+            aa1528ca4bf3: Pushed
+            18c5590c7bff: Pushed
+            2bdf88b2699d: Mounted from glaciar/glaciar.org-front
+            f1b5933fe4b5: Mounted from pabloeze/techu-backend
+            1.0: digest: sha256:034deef4048acf9f7b81ae9d0e1fa6421206fee846a220c4b783edf950d72696 size: 1163
+
+        ╰─$ docker run -d  -p 80:80 pabloeze/healthydata:1.0
+
+            And, Happy running!
+
+# Imágens Gratis
     https://www.pexels.com/es-es/foto/ciudad-paisaje-punto-de-referencia-calle-3254729/
+    https://www.pexels.com/es-es/foto/antiguo-arquitectura-arquitectura-historica-calle-415980/
+    https://www.pexels.com/es-es/foto/arquitectura-centrico-centro-de-la-ciudad-cielo-670261/
+    https://unsplash.com/photos/Krv7O6Uy5r8
 
-https://www.pexels.com/es-es/foto/antiguo-arquitectura-arquitectura-historica-calle-415980/
+# Imagenes Gratis Utilizadas
 
-
-https://www.pexels.com/es-es/foto/arquitectura-centrico-centro-de-la-ciudad-cielo-670261/
-
-Otra
-https://unsplash.com/photos/Krv7O6Uy5r8
-
-
-IMAGES USADAS:
     01 Busca
     https://www.pexels.com/photo/garden-madrid-puerta-de-alcala-spain-605158/
 
