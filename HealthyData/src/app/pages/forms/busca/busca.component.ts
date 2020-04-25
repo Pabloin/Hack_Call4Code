@@ -17,7 +17,15 @@ export class BuscaComponent implements OnInit {
   searchingBasico: boolean;
   searchingAvanzado: boolean;
   textoBasico: string;
-  placeHolder: string;
+  placeHolderBasico: string;
+
+  textoAvTitulo: string;
+  textoAvDesc: string;
+  textoAvCat: string;
+
+  textoAvTituloPCH: string;
+  textoAvCatPCH: string;
+  textoAvDescPCH: string;
 
   constructor() { }
 
@@ -27,20 +35,38 @@ export class BuscaComponent implements OnInit {
 
   doSearchBasico() {
     if (this.textoBasico === "") {
-      this.placeHolder = "ingrese un texto"
+      this.placeHolderBasico = "ingrese un texto"
     } else {
       this.searchingBasico = !this.searchingBasico;
     }
   }
 
   doSearchAvanzado() {
-    this.searchingAvanzado = !this.searchingAvanzado;
+    if (this.textoAvTitulo === "" && this.textoAvDesc === "" && this.textoAvCat === "") {
+      this.textoAvTitulo = "";
+      this.textoAvDesc = "";
+      this.textoAvCat = "";
+
+      this.textoAvTituloPCH = "ingrese un texto";
+      this.textoAvCatPCH = "ingrese una categoria";
+      this.textoAvDescPCH = "ingrese un descripcion";
+    } else {
+      this.searchingAvanzado = !this.searchingAvanzado;
+    }
   }
 
   doClear() {
     this.searchingBasico = false;
     this.searchingAvanzado = false;
     this.textoBasico = "";
-    this.placeHolder = "";
+    this.placeHolderBasico = "";
+
+    this.textoAvTitulo = "";
+    this.textoAvDesc = "";
+    this.textoAvCat = "";
+
+    this.textoAvTituloPCH = "";
+    this.textoAvCatPCH = "";
+    this.textoAvDescPCH = "";
   }
 }
