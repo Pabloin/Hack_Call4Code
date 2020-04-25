@@ -57,14 +57,14 @@
 
               <div class="form-group row">
                 <div class="offset-sm-3 col-sm-9">
-                  <button type="submit" nbButton status="" [size]="sizes[0]">Subir</button>
+                  <button type="submit" nbButton status="" [size]="sizes[0]" (click)="doUploadDataset()">Subir</button>
                 </div>
               </div>
           </nb-card-body>
-        
+        </nb-card>
           
-          
-          <nb-card-body *ngIf="uploadDatasetOk">
+        <nb-card *ngIf="uploadDatasetOk">
+          <nb-card-body>
             <div class="form-group row">
               <div class="col-sm-9">
                 Dataset recibido ok
@@ -72,15 +72,11 @@
             </div>
             <br><br>
             <div class="offset-sm-3 col-sm-9">
-              <button type="submit" nbButton status="" [size]="sizes[0]" (click)="doReset()">Subir Otro</button>
+              <button type="submit" nbButton status="" [size]="sizes[0]" (click)="doReset()">Subir Otro Dataset</button>
             </div>
          </nb-card-body> 
-         
-
-
-
-
         </nb-card>
+
       </nb-tab>
 
       <nb-tab tabTitle="Enlaces" >
@@ -150,7 +146,7 @@
 
               <br><br>
               <div class="offset-sm-3 col-sm-9">
-                <button type="submit" nbButton status="" [size]="sizes[0]" (click)="doReset()">Subir otro</button>
+                <button type="submit" nbButton status="" [size]="sizes[0]" (click)="doReset()">Subir otro enlace</button>
               </div>
             </nb-card-body>
           </nb-card>
