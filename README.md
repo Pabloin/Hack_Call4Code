@@ -12,20 +12,20 @@ Organizado por: ONU + IBM
 
 # Demo Mobile
 
-<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/public/share/MF133ZMTW5#/screens">
+<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/overview/HealthyData---CallForCode-Hackathon-ck9gp9vv62wz3017ynejn3t7w/screens?v=01PDZCb4rPVMI6PrTo4RTQ%3D%3D&linkshare=urlcopied">
   <img src="Designs/HealthyData-Demo-mobile-80.png"/>
 </a>
 
 # Workflow Específico
 
-<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/public/share/MF133ZMTW5#/screens">
+<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/overview/HealthyData---CallForCode-Hackathon-ck9gp9vv62wz3017ynejn3t7w/screens?v=01PDZCb4rPVMI6PrTo4RTQ%3D%3D&linkshare=urlcopied">
   <img src="Designs/HealthyData-UseCase-01.png"/>
 </a>
 
 
 # Workflow general
 
-<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/public/share/MF133ZMTW5#/screens">
+<a target="_blank" href="https://pabloinchausti135051.invisionapp.com/overview/HealthyData---CallForCode-Hackathon-ck9gp9vv62wz3017ynejn3t7w/screens?v=01PDZCb4rPVMI6PrTo4RTQ%3D%3D&linkshare=urlcopied">
   <img src="Designs/HealthyData-workflow-01.png"/>
 </a>
 
