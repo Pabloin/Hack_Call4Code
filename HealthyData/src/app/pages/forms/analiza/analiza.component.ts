@@ -17,7 +17,7 @@ export class AnalizaComponent implements OnInit {
   txt_SECTOR = [ "Sector", "Sector" ];
   txt_GEO = [ "GEO", "GEO" ];
 
-  pattern: boolean = false
+  pattern: boolean = true
 
   txt_titulo1 = [ "Cantidad de Infecciones ", "Number of Infections " ]
   txt_titulo2 = [ "Edad Poblacion ", "Population Age" ]
