@@ -21,6 +21,6 @@ jobs:
       run: cd HealthyData && npm install
 
     - name: Build
-      run: npm run build 
+      run: cd HealthyData && npm run build
 
       
