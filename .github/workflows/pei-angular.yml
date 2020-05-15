@@ -1,12 +1,9 @@
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: feature/ID-#6-GitHub-Actions-Angular
- 
-      
+       
 jobs:
 
   build:
@@ -21,5 +18,9 @@ jobs:
       with:
         node-version: 12.8
     - name: Install dependencies
-      run: npm install
+      run: cd HealthyData && npm install
 
+    - name: Build
+      run: cd HealthyData && npm run build
+
+      
