@@ -101,4 +101,5 @@
 
 # GitHub Actions
 
-    WIP with Medium
+    WIP with Medium 
+    HUSKY_SKIP_HOOKS=true
